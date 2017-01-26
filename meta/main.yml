@@ -3,15 +3,13 @@ dependencies: []
 
 galaxy_info:
   author: ferrarimarco
-  description: Install Oracle Virtualbox
+  description: Setup Bash aliases
   license: "license (Apache 2.0)"
   min_ansible_version: 2.1.1.0
   platforms:
   - name: Ubuntu
     versions:
-      - trusty
-      - xenial
-      - yakkety
+      - all
   galaxy_tags:
     - virtualmachine
     - virtualbox
