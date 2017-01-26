@@ -1,3 +1,6 @@
+.kitchen/
+.kitchen.local.yml
+
 *.gem
 *.rbc
 /.config

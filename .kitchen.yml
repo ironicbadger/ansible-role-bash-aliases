@@ -1,0 +1,39 @@
+---
+driver:
+  name: docker
+  require_chef_omnibus: false
+  require_ruby_for_busser: false
+  use_sudo: false
+
+provisioner:
+  ansible_connection: ssh
+  ansible_host_key_checking: false
+  ansible_version: latest
+  name: ansible_playbook
+  hosts: test-kitchen
+  idempotency_test: true
+  require_ansible_repo: true
+  require_chef_for_busser: false
+  require_ruby_for_busser: false
+  role_name: ansible-role-bash-aliases
+  roles_path: .
+
+platforms:
+  - name: ubuntu-14.04
+    driver_config:
+      image: ubuntu:14.04
+      platform: ubuntu
+  - name: ubuntu-16.04
+    driver_config:
+      image: ubuntu:16.04
+      platform: ubuntu
+  - name: ubuntu-16.10
+    driver_config:
+      image: ubuntu:16.10
+      platform: ubuntu
+
+suites:
+  - name: default
+
+verifier:
+  name: inspec

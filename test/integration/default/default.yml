@@ -1,0 +1,7 @@
+---
+- hosts: all
+  roles:
+    - role: ansible-role-bash-aliases
+      bash_aliases:
+        - { alias: "test-alias", command: "test-command" }
+      become: yes
