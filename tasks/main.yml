@@ -1,0 +1,17 @@
+---
+- name: Setup Bash aliases
+  lineinfile:
+    dest: "/etc/bash_aliases"
+    create: yes
+    group: root
+    line: "alias {{ item.alias }}='{{ item.command }}'"
+    mode: 0644
+    owner: root
+    regexp: "^alias {{ item.alias }}="
+  with_items: '{{bash_aliases}}'
+
+- name: Source aliases file
+  lineinfile:
+    dest: /etc/bash.bashrc
+    line: 'source /etc/bash_aliases'
+    state: present
