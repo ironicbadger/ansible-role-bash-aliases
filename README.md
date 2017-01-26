@@ -2,7 +2,7 @@
 * Development branch: [![Build Status](https://travis-ci.org/ferrarimarco/ansible-role-bash-aliases.svg?branch=development)](https://travis-ci.org/ferrarimarco/ansible-role-bash-aliases)
 * Master branch: [![Build Status](https://travis-ci.org/ferrarimarco/ansible-role-bash-aliases.svg?branch=master)](https://travis-ci.org/ferrarimarco/ansible-role-bash-aliases)
 
-An Ansible role to configure Bash aliases.
+An Ansible role to configure Bash aliases. This role supports variable in aliases, like `git log "$(pwd)"`.
 
 ## Using the role
 ### Installation
