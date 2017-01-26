@@ -18,6 +18,7 @@ ansible-galaxy install ferrarimarco.bash-aliases
         bashalias_aliases:
             - { alias: "ll", command: "ls -hl" }
             - { alias: "la", command: "ls -hal" }
+            - { alias: "git-log", command: 'git log "$(pwd)"' }
 ```
 
 ## Testing the role
