@@ -4,6 +4,7 @@
 # Fail if one of the commands of this script fails
 set -e
 
+kitchen diagnose --all
 kitchen test
 
 set +e
