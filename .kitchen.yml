@@ -6,7 +6,7 @@ driver:
   use_sudo: false
 
 provisioner:
-  ansible_connection: ssh
+  ansible_connection: local
   ansible_host_key_checking: false
   ansible_version: latest
   name: ansible_playbook
