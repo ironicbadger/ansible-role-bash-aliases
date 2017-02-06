@@ -1,4 +1,4 @@
-# Ansible Role: Virtualbox
+# Ansible Role: Bash aliases
 * Development branch: [![Build Status](https://travis-ci.org/ferrarimarco/ansible-role-bash-aliases.svg?branch=development)](https://travis-ci.org/ferrarimarco/ansible-role-bash-aliases)
 * Master branch: [![Build Status](https://travis-ci.org/ferrarimarco/ansible-role-bash-aliases.svg?branch=master)](https://travis-ci.org/ferrarimarco/ansible-role-bash-aliases)
 
